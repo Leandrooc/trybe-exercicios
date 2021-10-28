@@ -20,9 +20,9 @@ O programa conta com mais de 1.500 horas de aulas e aborda Fundamentos do Desenv
 
 #### Bloco 3: Unix e Bash
 
-- [ ] 3.1 : Introdução - HTML & CSS
+- [X] 3.1 : Introdução - HTML & CSS
 - [ ] 3.1 : HTML & CSS - Estruturas de página
-- [ ] 3.1 : HTML & CSS - Primeiros passos em CSS
-- [ ] 3.1 : HTML & CSS - Seletores e posicionamento
-- [ ] 3.1 : HTML Semântico
-- [ ] 3.1 : Projeto - Lessons Learned
+- [ ] 3.2 : HTML & CSS - Primeiros passos em CSS
+- [ ] 3.3 : HTML & CSS - Seletores e posicionamento
+- [ ] 3.4 : HTML Semântico
+- [ ] 3.5 : Projeto - Lessons Learned
