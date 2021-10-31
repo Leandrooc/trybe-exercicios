@@ -18,7 +18,7 @@ O programa conta com mais de 1.500 horas de aulas e aborda Fundamentos do Desenv
 - [X] 2.2 : Git & GitHub - Entendendo os comandos
 - [X] 2.3 : Internet - Entendendo como ela funciona
 
-#### Bloco 3: Unix e Bash
+#### Bloco 3: Introdução á HTML e CSS
 
 - [X] 3.1 : Introdução - HTML & CSS
 - [ ] 3.1 : HTML & CSS - Estruturas de página
