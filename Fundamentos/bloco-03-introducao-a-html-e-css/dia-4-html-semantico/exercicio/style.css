@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 238, 232);
+}
+header{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 900;
+    background-color: rgb(243, 207, 181);
+}
+ul li{
+    list-style: none;
+}
+nav ul li{
+    display: inline;
+    background-color: chartreuse;
+    font-size: 19px;
+    margin: 30px;
+    padding: 13px;
+}
+nav{
+    background-color: rgb(165, 74, 9);
+    height: 80px;
+}
+h2, h3{
+    text-align: center;
+}
+h3{
+    font-size: 26px;
+}
+#imgsection1{
+    padding: 30px;
+}
+#cientific{
+    display: inline-block;
+}
+#cientific li{
+    margin-bottom: 8%;
+}
+
+#imgsection2{
+    height: 500px;
+    margin-left: 25%;
+    padding-bottom: 5%;
+}
+
+#p1{
+    text-align: center;
+}
+#imgsection3{
+    margin-left: 25%;
+    padding-bottom: 5%;
+}
+#p2{
+    text-align: center;
+}
+#subtitle3{
+    padding: 20px;
+}
+
+.refs{
+    text-align: center;
+}
+.refs a{
+    text-decoration: none;
+    font-style: italic;
+    font-size: 32px;
+    color: coral;
+}
+aside a{
+    text-decoration: none;
+    margin: 350px;
+    font-size: 30px;
+}
+footer{
+    background-color: rgb(165, 74, 9);
+    text-align: center;
+    padding: 22px;
+    font-size: 18px;
+    font-weight: 900;
+}
