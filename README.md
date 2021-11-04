@@ -24,8 +24,8 @@ O programa conta com mais de 1.500 horas de aulas e aborda Fundamentos do Desenv
 - [X] 3.1 : HTML & CSS - Estruturas de página
 - [X] 3.2 : HTML & CSS - Primeiros passos em CSS
 - [X] 3.3 : HTML & CSS - Seletores e posicionamento
-- [ ] 3.4 : HTML Semântico
-- [ ] 3.5 : Projeto - Lessons Learned
+- [X] 3.4 : HTML Semântico
+- [X] 3.5 : Projeto - Lessons Learned
 
 #### Bloco 4: Introdução à JavaScript e Lógica de Programação
 
