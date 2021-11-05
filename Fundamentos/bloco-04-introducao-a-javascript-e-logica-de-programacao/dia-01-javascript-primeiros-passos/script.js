@@ -162,3 +162,38 @@ function lucro(produto,venda,quantidade) {
 
 lucro(200,320,1000);
 lucro(220,340,1200);
+
+/* Exercício 11 */
+
+console.log(" Exercício 11")
+
+const bruto = 3000
+
+let inss
+let ir
+
+if(bruto <= 1556.94) {
+    inss = bruto * 0.08
+}  else if ( bruto <= 2594.92 ){
+    inss = bruto * 0.09
+} else if (bruto <= 5189.82 ) {
+    inss = bruto * 0.11
+} else {
+    inss = 570.88
+}
+
+const brutoinss = bruto - inss
+
+if ( brutoinss <= 1903.98) {
+    ir = 0
+} else if ( brutoinss <= 2826.65) {
+    ir = ( (brutoinss/100 )* 7.5 ) - 142.80
+} else if ( brutoinss <= 3751.05) {
+    ir = ( (brutoinss/100 )* 15 ) - 354.80
+} else if ( brutoinss <= 4664.68 ) {
+    ir = ( (brutoinss/100 )* 22.5 ) - 636.13
+} else {
+    ir = ( (brutoinss/100 )* 27.5 ) - 869.36
+}
+
+console.log("Salário final - " + ( brutoinss - ir));
