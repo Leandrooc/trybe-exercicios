@@ -89,4 +89,76 @@ xadrez("peãO")
 xadrez("BisPo")
 xadrez("torre")
 xadrez("peçaestranha")
+
 /* Exercício 7 */
+
+console.log("Exercício 7")
+
+function notas(n) {
+      if( n >= 90) {
+        return "Nota - A"
+    } else if ( n >= 80) {
+        return "Nota - B"
+    } else if ( n >= 70) {
+        return "Nota - C"
+    } else if ( n >= 60) {
+        return "Nota - D"
+    } else if ( n >= 50) {
+        return "Nota - E"
+    } else if ( n < 50) {
+        return "Nota - F"
+    }
+}
+
+console.log(notas(99))
+console.log(notas(56))
+console.log(notas(33))
+console.log(notas(81))
+
+/* Exercício 8 */
+
+console.log(" Exercício 8")
+
+const n1 = 2
+const n2 = 3
+const n3 = 4
+
+if ( n1 % 2 === 0 || n2 % 2 === 0 || n3 % 2 === 0){
+    let t = true
+    console.log(t)
+} else {
+    let t = !true
+    console.log(t)
+} 
+
+/* Exercício 9 */
+
+console.log(" Exercício 9")
+
+const m1 = 2
+const m2 = 6
+const m3 = 8
+
+if ( m1 % 2 !== 0 || m2 % 2 !== 0 || m3 % 2 !== 0){
+    let t = true
+    console.log(t)
+} else {
+    let t = !true
+    console.log(t)
+} 
+
+/* Exercício 10 */
+
+console.log(" Exercício 10")
+
+function lucro(produto,venda,quantidade) {
+
+    let total = produto + ((produto/100)*20)
+    let lucro = venda - total
+    let lucrototal = lucro * quantidade
+    console.log(lucrototal)
+
+}
+
+lucro(200,320,1000);
+lucro(220,340,1200);
