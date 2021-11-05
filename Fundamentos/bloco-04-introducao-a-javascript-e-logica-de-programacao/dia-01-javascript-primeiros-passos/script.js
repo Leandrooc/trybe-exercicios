@@ -34,11 +34,59 @@ if ( c > d && c > e ) {
 
 /* Exercício 4 */
 
+const f = -16
+if ( f > 0) {
+    console.log("Exercício - 4 - Positive ")
+} else if ( f == 0) {
+    console.log("Exercício - 4 - zero ")
+} else {
+    console.log("Exercício - 4 - Negative ")
+}
 
 /* Exercício 5 */
+
+const angulo1 = 90
+const angulo2 = 45
+const angulo3 = 46
+
+if (angulo1 + angulo2 + angulo3 == 180) {
+    let z = true
+    console.log("Exercício 5 - " + z)
+} else {
+    let z = false
+    console.log("Exercício 5 - " + z + " - O triângulo não pode ter " + (angulo1+angulo2+angulo3) + " graus")
+}
 
 
 /* Exercício 6 */
 
+console.log("Exercício 6")
 
+function xadrez (y) {
+    let lower = y.toLowerCase()
+    if ( lower === "rei") {
+        console.log("O rei pode mover-se em todas as direções, somente uma casa por vez")
+    } else if ( lower === "rainha") {
+        console.log("A rainha move-se ao longo da horizontal, vertical e diagonais, mas não pode pular outras peças")
+    } else if ( lower === "bispo") {
+        console.log("O bispo move-se ao longo da diagonal. Não pode pular outras peças.")
+    } else if ( lower === "cavalo") {
+        console.log("A cavalo é a única peça que pode pular as outras, seu movimento é em formato de L")
+    } else if ( lower === "torre") {
+        console.log("A torre movimenta-se pela vertical ou horizontal, mas não pode pular peças")
+    } else if ( lower === "peão") {
+        console.log("O peão movimenta-se apenas uma casa para frente, ou duas no seu primeiro movimento do jogo")
+    } else if ( lower === "peao") {
+        console.log("Digite peão para saber os movimentos do peão")
+    } else {
+        console.log("Peça inválida")
+    }
+
+}
+
+xadrez("Rainha")
+xadrez("peãO")
+xadrez("BisPo")
+xadrez("torre")
+xadrez("peçaestranha")
 /* Exercício 7 */
