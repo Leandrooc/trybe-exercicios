@@ -29,16 +29,16 @@ O programa conta com mais de 1.500 horas de aulas e aborda Fundamentos do Desenv
 
 #### Bloco 4: Introdução à JavaScript e Lógica de Programação
 
-- [ ] 4.1 : Introdução - JavaScript
-- [ ] 4.1 : JavaScript - Primeiros passos
-- [ ] 4.2 : JavaScript - Array e loop For
-- [ ] 4.3 : JavaScript - Lógica de Programação e Algoritmos
-- [ ] 4.4 : JavaScript - Objetos e Funções
-- [ ] 4.5 : Projeto - Playground Functions
+- [X] 4.1 : Introdução - JavaScript
+- [X] 4.1 : JavaScript - Primeiros passos
+- [X] 4.2 : JavaScript - Array e loop For
+- [X] 4.3 : JavaScript - Lógica de Programação e Algoritmos
+- [X] 4.4 : JavaScript - Objetos e Funções
+- [X] 4.5 : Projeto - Playground Functions
 
 #### Bloco 5: JavaScrip: DOM, Eventos e Web Storage
 
-- [ ] 5.1 : JavaScript - DOM e seletores
+- [X] 5.1 : JavaScript - DOM e seletores
 - [ ] 5.2 : JavaScript - Trabalhando com elementos
 - [ ] 5.3 : JavaScript - Eventos
 - [ ] 5.4 : JavaScript - Web Storage
