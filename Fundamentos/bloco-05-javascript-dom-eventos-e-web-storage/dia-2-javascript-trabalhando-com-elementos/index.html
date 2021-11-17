@@ -110,15 +110,18 @@
     /* Exercício 8 */
 
         let ul = document.createElement("ul")
+        ul.className = "ul1"
         section3.appendChild(ul)
 
         let listorder = ["um","dois","três","quatro","cinco","seis","sete","oito","nove","dez"];
 
         for(i = 0; i < listorder.length; i++) {
 
-        let list = document.createElement("li")
-        list.innerText = listorder[i]
-        ul.appendChild(list)
+        let list = document.createElement("li");
+        list.innerText = listorder[i];
+        list.className = "li-item";
+
+        ul.appendChild(list);
 
         }
 
@@ -136,18 +139,42 @@
         main.appendChild(h32)
         main.appendChild(h33)
 
+    /* Exercícios parte 2 */
+    /* Exercício 1 */
 
+        h1.className = "title"
 
+    /* Exercício 2 */
+
+        h3.className = "description"
+        h32.className = "description"
+        h33.className = "description"
+
+    /* Exercício 3 */
+
+        mainc.removeChild(section2)
+
+    /* Exercício 4 */
+
+        section3.style.marginRight = "auto"
+
+    /* Exercício 5 */
+
+        mainc.style.backgroundColor = "green"
+
+    /* Exercício 6 */
+
+    let arl = document.querySelectorAll(".li-item");
+    for(i = 0; i < arl.length; i++) {
+        let elem = arl[i]
+
+        if (elem.innerText.includes('nove') || elem.innerText.includes('dez')) {
+            ul.removeChild(elem);
+        }
+    }
+
+     //////////////////////////////////////////////////////////////////////////////////////////
         
-
-        
-
-
-
-
-
-        
-       
 
 
     </script>
