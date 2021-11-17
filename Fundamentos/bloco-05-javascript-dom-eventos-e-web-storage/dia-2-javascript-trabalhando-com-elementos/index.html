@@ -59,17 +59,98 @@
   <body>
 
 
-    <script>
 
-        /* Exercício 1 */
+      
+  <script>
+
+    /* Exercício 1 */
 
         let h1 = document.createElement("h1")
         h1.innerText = "Exercício 5.2 - Javascript DOM"
         document.body.appendChild(h1)
 
-        /* Exercício 2 */
+     /* Exercício 2 */
+
+        let main = document.createElement("main")
+        main.className = "main-content"
+        document.body.appendChild(main)
+
+     /* Exercício 3 */
+
+        let mainc = document.getElementsByClassName("main-content")[0]
+        let section = document.createElement("section")
+        section.className = "center-content"
+        mainc.appendChild(section)
+
+    /* Exercício 4 */
+
+        let p = document.createElement("p")
+        p.innerText = " texto teste hushuaushsushiausdhfiaushduahduashduashduadhusaiuahdiaushd"
+        section.appendChild(p)
+
+    /* Exercício 5 */
+
+        let section2 = document.createElement("section")
+        section2.className = "left-content"
+        mainc.appendChild(section2)
+
+    /* Exercício 6 */
+
+        let section3 = document.createElement("section")
+        section3.className = "right-content"
+        mainc.appendChild(section3)
+
+    /* Exercício 7 */
+
+        let img = document.createElement("img")
+        img.className = "small-image"
+        img.src = "https://picsum.photos/200"
+        section2.appendChild(img)
+
+    /* Exercício 8 */
+
+        let ul = document.createElement("ul")
+        section3.appendChild(ul)
+
+        let listorder = ["um","dois","três","quatro","cinco","seis","sete","oito","nove","dez"];
+
+        for(i = 0; i < listorder.length; i++) {
+
+        let list = document.createElement("li")
+        list.innerText = listorder[i]
+        ul.appendChild(list)
+
+        }
+
+    /* Exercício 9 */
+
+        let h3 = document.createElement("h3")
+        let h32 = document.createElement("h3")
+        let h33 = document.createElement("h3")
+
+        h3.innerText = " teste"
+        h32.innerText = "teste22"
+        h33.innerText = "teste233399999"
+
+        main.appendChild(h3)
+        main.appendChild(h32)
+        main.appendChild(h33)
+
+
+
+        
+
+        
+
+
+
+
+
+        
+       
 
 
     </script>
   </body>
+
 </html>
