@@ -31,16 +31,93 @@ function createDaysOfTheWeek() {
     ul.appendChild(list);
     }
 
-    /* Exercício 2 */
+/* Exercício 2 */
 
-
-function makebutton (str)  {
-
+let makebutton = (str) =>  {
     let bclass = document.querySelectorAll(".buttons-container")[0]
     let button = document.createElement("button");
     button.innerText = str
+    button.className = str
     bclass.appendChild(button)
-
 }
 
-makebutton("feriado");
+makebutton("Feriados");
+
+/* Exercício 3 */
+
+/*
+function click () {
+    cont = 0
+    let holiday = document.getElementsByClassName("holiday")
+    let clickbutton = document.getElementsByClassName("Feriados")[0]
+
+    clickbutton.addEventListener("click", click);
+    
+
+    if(cont === 0) {
+        for(i = 0; i < holiday.length; i++) {
+            holiday[i].style.backgroundColor = "black"
+            holiday[i].style.border = "solid 5px yellow"
+            beforeafter = false;
+       } 
+    
+    cont++
+
+    }else {  for(i = 0; i < holiday.length; i++) {
+    holiday[i].style.backgroundColor = "black"
+    holiday[i].style.border = "solid 5px yellow"
+    beforeafter = false;
+}
+  cont-- }
+}
+
+click(); */
+/*
+function displayHolidays() {
+    let getHolidayButton = document.querySelector('.Feriados');
+    let getHolidays = document.querySelectorAll('.holiday')
+    let backgroundColor = 'rgb(238,238,238)';
+    let setNewColor = 'white';
+  
+    getHolidayButton.addEventListener('click', function() {
+      for (let index = 0; index < getHolidays.length; index += 1) {
+        if (getHolidays[index].style.backgroundColor === setNewColor) {
+          getHolidays[index].style.backgroundColor = backgroundColor;
+          getHolidays[index].style.border = ""
+        } else {
+          getHolidays[index].style.backgroundColor = setNewColor;
+          getHolidays[index].style.border = "solid 2px yellow"
+
+        }
+      }
+    })
+  };
+  
+  displayHolidays(); */
+
+
+
+  let buttonh = document.querySelector('.Feriados');
+  let listholiday = document.querySelectorAll('.holiday')
+
+  buttonh.addEventListener("click", () => {
+
+    for(i =0; i < listholiday.length; i++) {
+        if(listholiday[i].style.backgroundColor !== "darkblue") {
+            listholiday[i].style.backgroundColor = "darkblue"
+            listholiday[i].style.border = "solid 3px yellow"
+            listholiday[i].style.fontSize = "26px"
+        } else {
+            listholiday[i].style.backgroundColor = "#eee"
+            listholiday[i].style.border = ""
+            listholiday[i].style.fontSize = "20px"
+
+        }
+    }
+    
+  })
+
+
+
+
+
