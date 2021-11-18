@@ -80,5 +80,40 @@ makebutton2("Sexta-feira");
 
 // Exercício 5
 
+let buttonf = document.querySelector('#btn-friday');
+let listfriday = document.querySelectorAll('.friday')
+let fridayday = [];
+
+for (i = 0; i < listfriday.length; i++) {
+    fridayday.push(listfriday[i].innerText)
+}
+
+buttonf.addEventListener("click", () => {
+
+        for(i = 0; i < listfriday.length; i++) {
+            if(listfriday[i].innerText !== "testando") {
+            listfriday[i].innerText = "testando"
+        } else {
+            for(i = 0; i < listfriday.length; i++) {
+                listfriday[i].innerText = fridayday[i]
+            }
+        }
+    } 
+})
+
+// Exercício 6
+
+let linumbers = document.querySelectorAll(".day")
+console.log(linumbers)
+linum = 
+
+
+linumbers.addEventListener("onmouseover", (event) => {
+    console.log(event.target) 
+    for(i = 0; i < linumbers.length; i++) {
+
+    }
+
+})
 
 
