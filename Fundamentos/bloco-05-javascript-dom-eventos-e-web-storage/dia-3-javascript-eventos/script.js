@@ -13,6 +13,8 @@ function createDaysOfTheWeek() {
   
   createDaysOfTheWeek();
 
+  // Exercício 1
+
   const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
 
   let ul = document.getElementById("days")
@@ -27,9 +29,91 @@ function createDaysOfTheWeek() {
         list.className = "day friday";
     } else {
         list.className = "day";
-
     }
-
     ul.appendChild(list);
+    }
+
+// Exercício 2 
+
+let makebutton = (str) =>  {
+    let bclass = document.querySelectorAll(".buttons-container")[0]
+    let button = document.createElement("button");
+    button.id = "btn-holiday"
+    button.innerText = str
+    bclass.appendChild(button)
+}
+
+makebutton("Feriados");
+
+// Exercício 3
+
+let buttonh = document.querySelector('#btn-holiday');
+let listholiday = document.querySelectorAll('.holiday')
+
+buttonh.addEventListener("click", () => {
+
+    for(i =0; i < listholiday.length; i++) {
+        if(listholiday[i].style.backgroundColor !== "darkblue") {
+            listholiday[i].style.backgroundColor = "darkblue"
+            listholiday[i].style.border = "solid 3px yellow"
+            listholiday[i].style.fontSize = "26px"
+        } else {
+            listholiday[i].style.backgroundColor = "#eee"
+            listholiday[i].style.border = ""
+            listholiday[i].style.fontSize = "20px"
+               }
+    }
+    
+  })
+
+// Exercício 4
+
+let makebutton2 = (str) =>  {
+    let bclass = document.querySelectorAll(".buttons-container")[0]
+    let button = document.createElement("button");
+    button.id = "btn-friday"
+    button.innerText = str
+    bclass.appendChild(button)
+}
+
+makebutton2("Sexta-feira");
+
+// Exercício 5
+
+let buttonf = document.querySelector('#btn-friday');
+let listfriday = document.querySelectorAll('.friday')
+let fridayday = [];
+
+for (i = 0; i < listfriday.length; i++) {
+    fridayday.push(listfriday[i].innerText)
+}
+
+buttonf.addEventListener("click", () => {
+
+        for(i = 0; i < listfriday.length; i++) {
+            if(listfriday[i].innerText !== "testando") {
+            listfriday[i].innerText = "testando"
+        } else {
+            for(i = 0; i < listfriday.length; i++) {
+                listfriday[i].innerText = fridayday[i]
+            }
+        }
+    } 
+})
+
+// Exercício 6
+
+let linumbers = document.querySelectorAll(".day")
+console.log(linumbers)
+linum = 
+
+
+linumbers.addEventListener("onmouseover", (event) => {
+    console.log(event.target) 
+    for(i = 0; i < linumbers.length; i++) {
 
     }
+
+})
+
+
