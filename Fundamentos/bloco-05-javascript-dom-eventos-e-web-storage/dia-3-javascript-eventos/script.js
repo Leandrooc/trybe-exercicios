@@ -27,9 +27,20 @@ function createDaysOfTheWeek() {
         list.className = "day friday";
     } else {
         list.className = "day";
-
     }
-
     ul.appendChild(list);
-
     }
+
+    /* Exercício 2 */
+
+
+function makebutton (str)  {
+
+    let bclass = document.querySelectorAll(".buttons-container")[0]
+    let button = document.createElement("button");
+    button.innerText = str
+    bclass.appendChild(button)
+
+}
+
+makebutton("feriado");
