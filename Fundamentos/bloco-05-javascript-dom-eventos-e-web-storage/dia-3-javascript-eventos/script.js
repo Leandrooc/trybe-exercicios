@@ -13,6 +13,8 @@ function createDaysOfTheWeek() {
   
   createDaysOfTheWeek();
 
+  // Exercício 1
+
   const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
 
   let ul = document.getElementById("days")
@@ -31,20 +33,19 @@ function createDaysOfTheWeek() {
     ul.appendChild(list);
     }
 
-/* Exercício 2 */
+// Exercício 2 
 
 let makebutton = (str) =>  {
     let bclass = document.querySelectorAll(".buttons-container")[0]
     let button = document.createElement("button");
-    button.innerText = str
     button.id = "btn-holiday"
+    button.innerText = str
     bclass.appendChild(button)
 }
 
 makebutton("Feriados");
 
-/* Exercício 3 */
-
+// Exercício 3
 
 let buttonh = document.querySelector('#btn-holiday');
 let listholiday = document.querySelectorAll('.holiday')
@@ -65,7 +66,19 @@ buttonh.addEventListener("click", () => {
     
   })
 
+// Exercício 4
 
+let makebutton2 = (str) =>  {
+    let bclass = document.querySelectorAll(".buttons-container")[0]
+    let button = document.createElement("button");
+    button.id = "btn-friday"
+    button.innerText = str
+    bclass.appendChild(button)
+}
+
+makebutton2("Sexta-feira");
+
+// Exercício 5
 
 
 
