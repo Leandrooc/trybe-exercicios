@@ -159,3 +159,14 @@ for(let y of tasks) {
 }
 
 // Exercício 10
+
+let taskselected = document.querySelector(".task.selected")
+
+for(let p of linumbers) {
+    p.addEventListener("click", () => {
+
+            p.style.color === "blue"
+        
+    })
+
+}
