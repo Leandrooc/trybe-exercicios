@@ -126,6 +126,18 @@ let spa = (str) =>  {
     mytasks.appendChild(span)
 }
 
-spa("cozinhar");
+spa("Cozinhar");
 
 // Exercício 8
+
+let legend = (str) =>  {
+    let mytasks = document.querySelector(".my-tasks")
+    let div = document.createElement("div");
+    div.className = "task"
+    div.style.backgroundColor = str
+    mytasks.appendChild(div)
+}
+
+legend("green")
+
+// Exercício 9
