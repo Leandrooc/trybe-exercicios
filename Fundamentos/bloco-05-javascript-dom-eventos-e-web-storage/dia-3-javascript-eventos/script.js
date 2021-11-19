@@ -104,16 +104,58 @@ buttonf.addEventListener("click", () => {
 // Exercício 6
 
 let linumbers = document.querySelectorAll(".day")
-console.log(linumbers)
-linum = 
+
+for(let y of linumbers) {
+    y.addEventListener("mouseover", () => {
+        y.style.fontSize = "30px"
+        y.style.fontWeight = '600';
+    })
+
+    y.addEventListener("mouseout", () => {
+        y.style.fontSize = "20px"
+        y.style.fontWeight = '200';
+    })
+}
+
+// Exercício 7
+
+let spa = (str) =>  {
+    let mytasks = document.querySelector(".my-tasks")
+    let span = document.createElement("span");
+    span.innerText = str
+    mytasks.appendChild(span)
+}
+
+spa("Cozinhar");
+
+// Exercício 8
+
+let legend = (str) =>  {
+    let mytasks = document.querySelector(".my-tasks")
+    let div = document.createElement("div");
+    div.className = "task"
+    div.style.backgroundColor = str
+    mytasks.appendChild(div)
+}
+
+legend("green")
+
+// Exercício 9
+
+let tasks = document.getElementsByClassName("task")
+
+for(let y of tasks) {
 
 
-linumbers.addEventListener("onmouseover", (event) => {
-    console.log(event.target) 
-    for(i = 0; i < linumbers.length; i++) {
-
+    y.addEventListener("click", (event) => {
+        if(event.target.className === "task") {
+        event.target.className = "task selected"
     }
+        
+         else if(event.target.className == "task selected") {
+            event.target.className = "task"
+        }
+    })
+}
 
-})
-
-
+// Exercício 10
