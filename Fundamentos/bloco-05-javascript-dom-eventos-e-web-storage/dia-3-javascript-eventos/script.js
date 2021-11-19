@@ -116,3 +116,16 @@ for(let y of linumbers) {
         y.style.fontWeight = '200';
     })
 }
+
+// Exercício 7
+
+let spa = (str) =>  {
+    let mytasks = document.querySelector(".my-tasks")
+    let span = document.createElement("span");
+    span.innerText = str
+    mytasks.appendChild(span)
+}
+
+spa("cozinhar");
+
+// Exercício 8
