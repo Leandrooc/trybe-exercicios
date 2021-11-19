@@ -141,3 +141,21 @@ let legend = (str) =>  {
 legend("green")
 
 // Exercício 9
+
+let tasks = document.getElementsByClassName("task")
+
+for(let y of tasks) {
+
+
+    y.addEventListener("click", (event) => {
+        if(event.target.className === "task") {
+        event.target.className = "task selected"
+    }
+        
+         else if(event.target.className == "task selected") {
+            event.target.className = "task"
+        }
+    })
+}
+
+// Exercício 10
