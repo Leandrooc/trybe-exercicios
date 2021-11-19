@@ -104,16 +104,15 @@ buttonf.addEventListener("click", () => {
 // Exercício 6
 
 let linumbers = document.querySelectorAll(".day")
-console.log(linumbers)
-linum = 
 
+for(let y of linumbers) {
+    y.addEventListener("mouseover", () => {
+        y.style.fontSize = "30px"
+        y.style.fontWeight = '600';
+    })
 
-linumbers.addEventListener("onmouseover", (event) => {
-    console.log(event.target) 
-    for(i = 0; i < linumbers.length; i++) {
-
-    }
-
-})
-
-
+    y.addEventListener("mouseout", () => {
+        y.style.fontSize = "20px"
+        y.style.fontWeight = '200';
+    })
+}
