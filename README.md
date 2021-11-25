@@ -39,15 +39,15 @@ O programa conta com mais de 1.500 horas de aulas e aborda Fundamentos do Desenv
 #### Bloco 5: JavaScrip: DOM, Eventos e Web Storage
 
 - [X] 5.1 : JavaScript - DOM e seletores
-- [ ] 5.2 : JavaScript - Trabalhando com elementos
-- [ ] 5.3 : JavaScript - Eventos
-- [ ] 5.4 : JavaScript - Web Storage
-- [ ] 5.5 : Fundamentos - JavaScript - Projetos
-- [ ] 5.5 : Projeto - Arte com Pixels
-- [ ] 5.6 : Projeto - Lista de Tarefas
+- [X] 5.2 : JavaScript - Trabalhando com elementos
+- [X] 5.3 : JavaScript - Eventos
+- [X] 5.4 : JavaScript - Web Storage
+- [X] 5.5 : Fundamentos - JavaScript - Projetos
+- [X] 5.5 : Projeto - Arte com Pixels
+- [X] 5.6 : Projeto - Lista de Tarefas
 - [ ] 5.7 : Projeto Bônus - Meme Generator
 - [ ] 5.7 : Projeto Bônus - Adivinhe a Cor
-- [ ] 5.7 : Projeto Bônus - Carta Misteriosa
+- [X] 5.7 : Projeto Bônus - Carta Misteriosa
  
 #### Bloco 6: HTML & CSS: Forms, Flexbox e Responsivo
 
