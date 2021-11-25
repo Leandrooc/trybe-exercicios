@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 1 - Bloco 6 - HTML e CSS: Forms, Flexbox e Responsivo.</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="" method="GET">
+        <fieldset>
+
+            <label for="nome-completo"> Nome:
+                <input type="text" name="name" id="nome-completo" placeholder="Digite seu nome" required max="40">
+            </label> <br>
+
+            <label for="emailinput"> Email:
+                <input type="email" name="email" id="emailinput" placeholder="Digite seu email" required max="50">
+            </label> <br>
+
+
+            <label for="cpfinput"> CPF:
+                <input type="number" name="cpf" id="cpfinput" placeholder="Digite seu CPF" required max="11">
+            </label> <br>
+
+            <label for="enderecoinput"> Endereço:
+                <input type="text" name="adress" id="enderecoinput" placeholder="Digite seu Endereço" required max="200">
+            </label> <br>
+
+            <label for="cidadeinput"> Cidade:
+                <input type="text" name="city" id="cidadeinput" placeholder="Digite seu Endereço" required max="28">
+            </label> <br>
+
+            <label for=""> Estado que você mora:
+                <select required name="estados" id="input-estado">
+                </select>
+            </label>
+            <br>
+
+            <p>Tipo</p>
+            <label for="1">
+                <input type="radio" id="1" name="tipo" value="casa" required> Casa
+            </label>
+
+            <label for="2">
+                <input type="radio" id="2" name="tipo" value="apartamento" required> Apartamento
+            </label>
+
+        </fieldset>
+
+        <fieldset>
+
+        <label for="Resumo">
+            <p>Resumo do currículo</p>
+            <textarea name="" id="Resumo" cols="60" rows="8" maxlength="1000" required></textarea>
+        </label>
+        
+        <label for="cargo">
+            <p>Cargo</p>
+            <textarea name="" id="cargo" cols="60" rows="8" maxlength="40" required></textarea>
+        </label>
+        
+        <label for="descriçao">
+            <p>Descrição do cargo</p>
+            <textarea name="" id="descriçao" cols="60" rows="8" maxlength="500" required></textarea>
+        </label> <br>
+
+        <label for="inicio"> Data de início
+            <input type="date" name="inicio" id="inicio" required>
+        </label>
+
+        </fieldset>
+
+        <button id="submit" type="submit">Enviar</button>
+    </form>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
