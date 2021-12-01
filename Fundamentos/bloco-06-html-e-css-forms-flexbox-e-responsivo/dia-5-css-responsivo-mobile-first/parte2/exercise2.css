@@ -1,0 +1,151 @@
+html {
+    box-sizing: border-box;
+    background-color: rgb(250, 202, 202);
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+header nav ul{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: 0 90px;  
+    padding: 15px;
+    font-size: 30px;
+}
+nav ul li{
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 22px;
+}
+nav{
+    background-color: red;
+}
+*{
+    text-align: center;
+    list-style: none;
+}
+footer{
+    margin: 5px;
+    padding: 15px;
+}
+p{
+    margin: 25px;
+}
+
+
+@media screen and (min-width: 801px){
+*{
+        text-align: center;
+        list-style: none;
+}
+.span{
+    display: flex;
+}
+header nav ul{
+        margin: 0 80px;
+        padding: 15px;
+        font-size: 30px;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+nav ul li{
+        padding: 5px;
+        margin: 5px;
+        border: 3px solid black;
+        border-radius: 2px;
+        font-size: 40px;
+}
+nav{
+        background-color: red;
+}
+footer{
+        margin: 10px;
+        padding: 25px;
+}
+h1{
+        font-size: 35px;
+}
+h2{
+        font-size: 30px;
+}
+h3{
+        font-size: 27px;
+}
+p{
+        font-size: 23px;
+}
+aside{
+    font-size: 25px;
+}
+
+.container{
+    display: flex;
+    margin: 20px;
+}
+.aside-one{
+    margin:0 5px;
+}
+.aside-two{
+    order: 1;
+    margin:0 5px;
+}
+
+}
+
+@media screen and (min-width: 1260px){
+    *{
+            text-align: center;
+            list-style: none;
+    }
+    .span{
+        display: flex;
+    }
+    header nav ul{
+            margin: 0 80px;
+            padding: 15px;
+            font-size: 30px;
+            flex-flow: row;
+            justify-content: space-between;
+        }
+    nav ul li{
+            padding: 5px;
+            margin: 5px;
+            border: 3px solid black;
+            border-radius: 2px;
+            font-size: 40px;
+    }
+    nav{
+            background-color: red;
+    }
+    footer{
+            margin: 10px;
+            padding: 25px;
+    }
+    h1{
+            font-size: 42px;
+    }
+    h2{
+            font-size: 36px;
+    }
+    h3{
+            font-size: 31px;
+    }
+    p{
+            font-size: 25px;
+    }
+    
+    .container{
+        display: flex;
+        margin: 20px;
+    }
+    .aside-one{
+        margin:0 50px;
+    }
+    .aside-two{
+        order: 1;
+        margin:0 50px;
+    }
+    
+    }
