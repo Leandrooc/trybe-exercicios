@@ -10,3 +10,9 @@ const testingScope = (escopo) => {
 }
 
 testingScope(true);
+
+const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+
+oddsAndEvens.sort((a, b) => a - b);
+const join = oddsAndEvens.join(',')
+console.log(join);
