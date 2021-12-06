@@ -119,3 +119,47 @@ const verifyPair = (obj,name,keyvalue) => {
 
 verifyPair(lesson3, 'turno', 'noite');
 verifyPair(lesson3, 'materia', 'Maria Clara');
+
+// Bônus
+
+let students = 0;
+
+const lessons = () => {
+  let entries = Object.entries(allLessons)
+  for(property in entries) {
+    if(entries[property][1].materia === 'Matemática') {
+      students = students + entries[property][1].numeroEstudantes
+    }
+  }
+  console.log(`${students} Estudantes assistiram ás aulas de matemática`)
+}
+
+lessons();
+
+// Bônus parte 2 
+let students1 = 0;
+let aulasd = [];
+
+const createReport = (obj, professor) => {
+
+  let entries = Object.entries(obj)
+  for(property in entries) {
+    if(entries[property][1].professor === professor) {
+      students1 = students1 + entries[property][1].numeroEstudantes
+      aulasd.push(entries[property][1].materia)
+    }
+  }
+
+console.log(
+    { 
+    professor: `${professor}`,
+    aulas: aulasd,
+    estudantes: `${students1}`,
+  })
+  console.log(aulasd)
+  /*
+  console.log({teste: [2,3,'sds','s']}) */
+
+}
+
+createReport(allLessons, 'Maria Clara');
