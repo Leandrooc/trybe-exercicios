@@ -142,7 +142,7 @@ let aulasd = [];
 
 const createReport = (obj, professor) => {
 
-  let entries = Object.entries(allLessons)
+  let entries = Object.entries(obj)
   for(property in entries) {
     if(entries[property][1].professor === professor) {
       students1 = students1 + entries[property][1].numeroEstudantes
@@ -153,9 +153,12 @@ const createReport = (obj, professor) => {
 console.log(
     { 
     professor: `${professor}`,
-    aulas: `${aulasd}`,
+    aulas: aulasd,
     estudantes: `${students1}`,
   })
+  console.log(aulasd)
+  /*
+  console.log({teste: [2,3,'sds','s']}) */
 
 }
 
