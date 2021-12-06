@@ -62,7 +62,3 @@ const function1 = (string, name) => {
 }
 function1("Tryber x aqui!","Bebeto")
 console.log(news)
-<<<<<<< HEAD
-//
-=======
->>>>>>> 873cd5ec12776b37d399ecbf6972fbb3361ad53f
