@@ -1,13 +1,16 @@
 let sum = require('./sum');
 
-test('sum test one', () => {
-  expect(sum(4,5)).toBe(9);
-});
+describe('sum test one', () => {
+  it('sum returns 9', () => {
+    expect(sum(4,5)).toBe(9);
+  })
 
-test('sum test two', () => {
+it('sum returns 0', () => {
   expect(sum(0,0)).toBe(0);
 });
 
-test('sum test three', () => {
+it('sum returns parameters must be numbers', () => {
   expect(()=> sum(4,"5")).toThrowError();
+});
+
 });
