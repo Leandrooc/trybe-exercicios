@@ -1,4 +1,4 @@
-let sum = require('./sum');
+const { sum } = require('./challenges');
 
 describe('sum test one', () => {
   it('sum returns 9', () => {
