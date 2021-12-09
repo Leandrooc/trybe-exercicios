@@ -42,3 +42,26 @@ const luckygenerator = (num, func) => {
 console.log(luckygenerator(3,lucky));
 
 // Exercício 3
+
+const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+
+const check = (arg1,arg2) => {
+  let contador = 0;
+  if(arg1.length === arg2.length) {
+    for(i = 0; i < arg1.length; i++) {
+      if(arg1[i] === arg2[i]) {
+        contador+=1
+      } else if ( arg2[i] !== 'N.A' && arg2[i] !== arg1[i]) {
+        contador-=0.5
+      }
+    } return `Nota final: ${contador}`
+  }
+
+}
+
+const task = (right,answers,callback) => {
+  return callback(right,answers)
+}
+
+console.log(task(RIGHT_ANSWERS,STUDENT_ANSWERS,check));
