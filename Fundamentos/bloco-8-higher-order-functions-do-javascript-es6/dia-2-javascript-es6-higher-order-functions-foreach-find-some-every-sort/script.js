@@ -67,7 +67,7 @@ const authorBornIn1947 = () => {
 const birth = books.find( obj => obj.author.birthYear === 1947)
 return birth.author.name
 }
-console.log(authorBornIn1947());
+console.log(`Exercício 1 ${authorBornIn1947()}`);
 
 // Exercício 2
 
@@ -83,7 +83,7 @@ function smallerName() {
   return smallest;
 }
 
-console.log(smallerName())
+console.log(`Exercício 2 ${smallerName()}`)
 
 // Exercício 3
 
@@ -92,7 +92,7 @@ const namelength = () => {
   return name;
   }
 
-console.log(namelength());
+console.log('Exercício 3', namelength());
 
 // Exercício 4
 
@@ -146,7 +146,7 @@ function booksOrderedByReleaseYearDesc(arr) {
   return sorted
 }
 
-console.log(booksOrderedByReleaseYearDesc(expectedResult));
+console.log('Exercício 4', booksOrderedByReleaseYearDesc(expectedResult));
 
 // Exercício 5
 
@@ -154,5 +154,49 @@ function everyoneWasBornOnSecXX(arr) {
   return arr.every(element => element.author.birthYear >= 1901 && element.author.birthYear <= 2000);
 }
 
-console.log(everyoneWasBornOnSecXX(expectedResult));
+console.log(`Exercício 5 ${everyoneWasBornOnSecXX(expectedResult)}`);
 
+// Exercício 6
+
+function someBookWasReleaseOnThe80s(arr) {
+  return arr.some(element => element.releaseYear >= 1980 && element.releaseYear <= 1989);
+}
+
+console.log(`Exercício 6 ${someBookWasReleaseOnThe80s(expectedResult)}`);
+
+// Exercício 7
+/*
+function authorUnique(arr) {
+  arr.some(element => () => {
+    for(i = 0; i < arr.length; i++) {
+      for(y = 0; y < arr.length; y++) {
+        if(arr[i].author.birthYear === arr[y].author.birthYear && arr[i].author.birthYear !== arr[y].author.birthYear) {
+          console.log(arr[i].author.birthYear)
+          console.log(arr[y].author.birthYear)
+
+        }
+      }
+    }
+
+});
+}
+
+console.log(authorUnique(expectedResult));*/
+
+function a (arr) {
+  let repeat = 0;
+  for(i = 0; i < arr.length; i++) {
+    repeat = 0
+    for(y = 0; y < arr.length; y++) {
+      if(arr[i].author.birthYear === arr[y].author.birthYear) {
+         repeat++
+      }
+      if(repeat === 2) {
+        return true;
+      }
+    }
+  }
+  return false;
+}
+
+console.log(a(expectedResult));
