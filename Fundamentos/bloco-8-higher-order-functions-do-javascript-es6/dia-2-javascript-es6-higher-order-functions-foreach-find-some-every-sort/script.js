@@ -84,3 +84,14 @@ function smallerName() {
 }
 
 console.log(smallerName())
+
+// Exercício 3
+
+const namelength = () => {
+  const name = books.find( obj => obj.name.length === 26)
+  return name;
+  }
+
+console.log(namelength());
+
+// Exercício 4
