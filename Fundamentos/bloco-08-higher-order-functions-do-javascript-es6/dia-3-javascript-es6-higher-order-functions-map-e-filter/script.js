@@ -106,3 +106,9 @@ const fantasyOrScienceFiction = (arr) => arr.filter((obj) => obj.genre === 'Fant
 console.log(fantasyOrScienceFiction(books));
 
 // Exercício 4
+
+const oldBookOrdered = (arr) => arr.filter((obj) => 2021 - obj.releaseYear > 60).sort((a,b) => a.releaseYear - b.releaseYear);
+
+console.log('4:', oldBookOrdered(books));
+
+// Exercicio 5
