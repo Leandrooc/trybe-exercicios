@@ -100,3 +100,9 @@ function nameAndAge(arr) {
 console.log(nameAndAge(books));
 
 // Exercício 3
+
+const fantasyOrScienceFiction = (arr) => arr.filter((obj) => obj.genre === 'Fantasia' || obj.genre === 'Ficção Científica');
+
+console.log(fantasyOrScienceFiction(books));
+
+// Exercício 4
