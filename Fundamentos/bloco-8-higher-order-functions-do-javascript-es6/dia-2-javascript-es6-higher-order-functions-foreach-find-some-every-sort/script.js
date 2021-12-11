@@ -165,23 +165,6 @@ function someBookWasReleaseOnThe80s(arr) {
 console.log(`Exercício 6 ${someBookWasReleaseOnThe80s(expectedResult)}`);
 
 // Exercício 7
-/*
-function authorUnique(arr) {
-  arr.some(element => () => {
-    for(i = 0; i < arr.length; i++) {
-      for(y = 0; y < arr.length; y++) {
-        if(arr[i].author.birthYear === arr[y].author.birthYear && arr[i].author.birthYear !== arr[y].author.birthYear) {
-          console.log(arr[i].author.birthYear)
-          console.log(arr[y].author.birthYear)
-
-        }
-      }
-    }
-
-});
-}
-
-console.log(authorUnique(expectedResult));*/
 
 function a (arr) {
   let repeat = 0;
