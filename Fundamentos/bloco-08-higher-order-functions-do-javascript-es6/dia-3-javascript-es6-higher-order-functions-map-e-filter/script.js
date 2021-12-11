@@ -112,3 +112,10 @@ const oldBookOrdered = (arr) => arr.filter((obj) => 2021 - obj.releaseYear > 60)
 console.log('4:', oldBookOrdered(books));
 
 // Exercicio 5
+
+const fantasyOrScienceFictionAuthors = () => {
+  let cientificandfantasy = fantasyOrScienceFiction(books);
+  return cientificandfantasy.map((obj) => obj.author.name).sort((a,b) => a.localeCompare(b));
+};
+
+console.log(fantasyOrScienceFictionAuthors(books));
