@@ -119,3 +119,11 @@ const fantasyOrScienceFictionAuthors = () => {
 };
 
 console.log(fantasyOrScienceFictionAuthors(books));
+
+// Exercício 6
+
+const oldBooks = (arr) => {
+  return arr.map((obj) => obj.name).sort((a,b) => a.localeCompare(b));
+}
+
+console.log(oldBooks(oldBookOrdered(books)));
