@@ -127,3 +127,15 @@ const oldBooks = (arr) => {
 }
 
 console.log(oldBooks(oldBookOrdered(books)));
+
+// Exercício 7
+
+const authorWith3DotsOnName = (arr) => {
+  return arr.filter((obj) => 
+    obj.author.name[1] === '.' 
+    && obj.author.name[4] === '.' 
+    && obj.author.name[7] === '.'
+  )[0].name;
+}
+
+console.log('7: ',authorWith3DotsOnName(books));
