@@ -4,11 +4,17 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Comp from './Comp'
+import Header from './Header';
+import Content from './Content';
+import Footer from './Footer';
 
 ReactDOM.render(
   <React.StrictMode>
+    <Content/>
+    <Header/>
     <App/>
     <Comp />
+    <Footer/>
   </React.StrictMode>,
   document.getElementById('root')
 );
