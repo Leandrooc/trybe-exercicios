@@ -76,42 +76,42 @@ O programa conta com mais de 1.500 horas de aulas e aborda Fundamentos do Desenv
  
 #### Bloco 9: JavaScript e Testes Assíncronos
 
-- [ ] 9.1 : JavaScript Assíncrono e Callbacks
-- [ ] 9.2 : JavaScript Assí­ncrono - Fetch API e async/await
-- [ ] 9.3 : Jest - Testes Assíncronos
-- [ ] 9.4 : Projeto - Carrinho de Compras
+- [X] 9.1 : JavaScript Assíncrono e Callbacks
+- [X] 9.2 : JavaScript Assí­ncrono - Fetch API e async/await
+- [X] 9.3 : Jest - Testes Assíncronos
+- [X] 9.4 : Projeto - Carrinho de Compras
  
 ## Desenvolvimento Front-end 📘
 
 #### Bloco 10: Introdução à React
 
-- [ ] 10.1 : Introdução - Front-end
-- [ ] 10.1 : Introdução - React
-- [ ] 10.1 : 'Hello, world!' no React!
-- [ ] 10.2 : Componentes React
-- [ ] 10.3 : Projeto - Sistema Solar
+- [X] 10.1 : Introdução - Front-end
+- [X] 10.1 : Introdução - React
+- [X] 10.1 : 'Hello, world!' no React!
+- [X] 10.2 : Componentes React
+- [X] 10.3 : Projeto - Sistema Solar
  
 #### Bloco 11: Componentes com Estado, Eventos e Formulários com React
 
-- [ ] 11.1 : Componentes com Estado e Eventos
-- [ ] 11.2 : Formulários no React
-- [ ] 11.3 : Projeto - Tryunfo
+- [X] 11.1 : Componentes com Estado e Eventos
+- [X] 11.2 : Formulários no React
+- [X] 11.3 : Projeto - Tryunfo
  
 #### Bloco 12: Ciclo de vida de componentes e React Router
 
-- [ ] 12.1 : Ciclo de vida de componentes
-- [ ] 12.2 : React Router
-- [ ] 12.3 : Projeto - TrybeTunes
+- [X] 12.1 : Ciclo de vida de componentes
+- [X] 12.2 : React Router
+- [X] 12.3 : Projeto - TrybeTunes
  
 #### Bloco 13: Metodologias Ágeis
 
-- [ ] 13.1 : Metodologias Ágeis
-- [ ] 13.2 : Projeto - Frontend Online Store
+- [X] 13.1 : Metodologias Ágeis
+- [X] 13.2 : Projeto - Frontend Online Store
  
 #### Bloco 14: Testes automatizados com React Testing Library
 
-- [ ] 14.1 : RTL - Primeiros passos
-- [ ] 14.2 : RTL - Mocks e Inputs
+- [X] 14.1 : RTL - Primeiros passos
+- [X] 14.2 : RTL - Mocks e Inputs
 - [ ] 14.3 : RTL - Testando React Router
 - [ ] 14.4 : Projeto - Testes em React
  
