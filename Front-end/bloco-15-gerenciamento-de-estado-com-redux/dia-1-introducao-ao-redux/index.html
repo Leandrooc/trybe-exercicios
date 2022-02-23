@@ -32,6 +32,8 @@
       <button id="previous">Previous color</button>
       <button id="next">Next color</button>
       <button id="random">Random color</button>
+      <button id="crazy">Crazy: Milliseconds</button>
+      <input id="input-crazy" type="number">
     </div>
     <script>
       const ESTADO_INICIAL = {
@@ -54,7 +56,7 @@
               case 'RANDOM_COLOR':
             return {
               ...state,
-              colors: [...state.colors, action.colorRandom ],
+              colors: ArrayColors,
               index: ArrayColors.findIndex(color => action.colorRandom === color)
               }
           default:
@@ -74,19 +76,12 @@
       })
 
 
-      document.getElementById('next').addEventListener('click', () => {
-        console.log('next');
-        store.dispatch(actionext());
-        console.log(store.getState());
-      })
-
-      document.getElementById('random').addEventListener('click', () => {
-        console.log('random');
-        const colorRandomic = criarCor();
-        console.log(colorRandomic);
-        store.dispatch(actionrandom(criarCor()));
-        console.log(store.getState());
-      })
+      document.getElementById('next').addEventListener('click', () => store.dispatch(actionext()));
+      document.getElementById('crazy').addEventListener('click', () => {
+        const time = document.getElementById('input-crazy').value;
+        setInterval(() => store.dispatch(actionrandom(criarCor())) , time)
+      });
+      document.getElementById('random').addEventListener('click', () => store.dispatch(actionrandom(criarCor())))
 
       const handleBackground = () => {
         const { colors, index } = store.getState()
