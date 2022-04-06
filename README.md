@@ -121,22 +121,22 @@ O programa conta com mais de 1.500 horas de aulas e aborda Fundamentos do Desenv
 - [X] 15.2 : Usando o Redux no React
 - [X] 15.3 : Usando o Redux no React - Prática
 - [X] 15.4 : Usando o Redux no React - Actions Assíncronas
-- [ ] 15.5 : Testes em React-Redux
-- [ ] 15.6 : Projeto - Trybe Wallet
+- [X] 15.5 : Testes em React-Redux
+- [X] 15.6 : Projeto - Trybe Wallet
  
 #### Bloco 16: Projeto Jogo de Trivia
 
-- [ ] 16.1 : Projeto - Jogo de Trivia
+- [X] 16.1 : Projeto - Jogo de Trivia
  
 #### Bloco 17: Context API e React Hooks
 
-- [ ] 17.1 : Context API do React
-- [ ] 17.2 : React Hooks - useState e useContext
-- [ ] 17.3 : React Hooks - useEffect e Hooks customizados
-- [ ] 17.4 : Projeto - StarWars Datatable com Context API e Hooks
+- [X] 17.1 : Context API do React
+- [X] 17.2 : React Hooks - useState e useContext
+- [X] 17.3 : React Hooks - useEffect e Hooks customizados
+- [X] 17.4 : Projeto - StarWars Datatable com Context API e Hooks
  
 #### Bloco 18: Projeto App de Receitas
-- [ ] 18.1 : Projeto - App de Receitas
+- [X] 18.1 : Projeto - App de Receitas
  
 ## Desenvolvimento Back-end 📘
 
