@@ -142,11 +142,11 @@ O programa conta com mais de 1.500 horas de aulas e aborda Fundamentos do Desenv
 
 #### Bloco 19: Introdução à SQL
 
-- [ ] 19.1 : Introdução - Back-end
-- [ ] 19.1 : Introdução - Bancos de dados relacionais
-- [ ] 19.1 : Banco de dados SQL
-- [ ] 19.2 : Encontrando dados em um banco de dados
-- [ ] 19.3 : Filtrando dados de forma específica
+- [X] 19.1 : Introdução - Back-end
+- [X] 19.1 : Introdução - Bancos de dados relacionais
+- [X] 19.1 : Banco de dados SQL
+- [X] 19.2 : Encontrando dados em um banco de dados
+- [X] 19.3 : Filtrando dados de forma específica
 - [ ] 19.4 : Manipulando tabelas
 - [ ] 19.5 : Projeto - All For One
  
