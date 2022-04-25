@@ -1,44 +1,26 @@
-DROP SCHEMA IF EXISTS PiecesProviders;
-CREATE SCHEMA PiecesProviders;
-USE PiecesProviders;
+select * from Pieces as p;
 
-CREATE TABLE Pieces (
-  Code INTEGER PRIMARY KEY NOT NULL,
-  Name TEXT NOT NULL
-);
+select * from Providers as p;
 
-CREATE TABLE Providers (
-  Code VARCHAR(40) PRIMARY KEY NOT NULL,
-  Name TEXT NOT NULL
-);
+select * from Provides as p;
 
-CREATE TABLE Provides (
-  Piece INTEGER,
-  FOREIGN KEY (Piece) REFERENCES Pieces (Code),
-  Provider VARCHAR(40),
-  FOREIGN KEY (Provider) REFERENCES Providers (Code),
-  Price INTEGER NOT NULL,
-  PRIMARY KEY (Piece , Provider)
-);
+select p2.Name as 'nome produto', p1.Price as 'valor produto'
+from Provides p1 inner join Pieces p2 
+where p1.Provider like "RB%" 
+and p1.Piece = p2.Code;
 
-INSERT INTO Providers(Code, Name)
-  VALUES ('HAL', 'Clarke Enterprises'),
-    ('RBT', 'Susan Calvin Corp.'),
-    ('TNBC', 'Skellington Supplies');
+select * from Provides p order by p.Price desc limit 5 
 
-INSERT INTO Pieces(Code, Name)
-  VALUES (1, 'Sprocket'),
-    (2, 'Screw'),
-    (3, 'Nut'),
-    (4, 'Bolt');
+//
 
-INSERT INTO Provides(Piece, Provider, Price)
-  VALUES (1, 'HAL', 10),
-    (1, 'RBT', 15),
-    (2, 'HAL', 20),
-    (2, 'RBT', 25),
-    (2, 'TNBC', 14),
-    (3, 'RBT', 50),
-    (3, 'TNBC', 45),
-    (4, 'HAL', 5),
-    (4, 'RBT', 7);
+USE Scientists;
+
+SELECT 'This is SQL Exercise, Practice and Solution';
+
+SELECT 1, 2, 3;
+
+SELECT 10 + 15;
+
+SELECT * FROM Scientists;
+
+SELECT * FROM Projects;
